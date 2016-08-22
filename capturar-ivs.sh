@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ifconfig wlan0 down;
 ifconfig mon0 down;
 ifconfig mon1 down;
@@ -23,3 +24,6 @@ read ARCHIVO;
 echo $ARCHIVO;
 airmon-ng start $INTERFACE_M $CHANNEL;
 airodump-ng -c $CHANNEL --bssid $BSSID -w $ARCHIVO $INTERFACE_M; 
+=======
+
+>>>>>>> eccd409bc3648991861428b65feacb2aae63a263
